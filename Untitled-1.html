@@ -1,0 +1,118 @@
+<html>
+  <body>
+      <head>
+          <style>
+              body {
+    background: url('Html/images/pexels-ovan-62693.jpg');
+    }
+    div.a {
+        text-align: center;
+        font-size: 70px;
+    }
+    div.b
+    {
+        float: right;
+        width: 200px ;
+        margin-bottom:10px; 
+    }
+    div.d{
+        position: absolute;
+        font-size: 150%;
+        right: 900px;
+        top: 8cm;
+    }     
+    div.h
+    {
+        position: absolute;
+        font-size: 150%;
+        left: 900px;
+        top: 8.5cm;
+    }
+    div.g
+    {
+
+        position:absolute;
+        font-size: 150%;
+        left: 100px;
+        top: 5cm;
+    }
+    div.e
+    {
+        position: absolute;
+        font-size: 150% ;
+        right: 100px;
+        top: 4.95cm;
+    }
+    div.count1
+    {
+        position: absolute;
+        font-size: 150%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        left: 199px;
+        top: 7cm;
+    }
+    div.count2
+    {
+        position: absolute;
+        font-size: 150%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        right: 199px;
+        top: 7cm
+    }
+    img{
+        object-fit: contain;
+        right: 50px;
+        bottom: 10px;
+        width: 670px;
+        height: 290px;
+    }     
+    div.x{
+        background-image: url('Html/images/pexels-johannes-plenio-1103970.jpg');
+        width: 1400px;
+        height: 180px;
+        border: 10px solid black;
+        float: center;
+    }
+    .bg{
+        background-image: url('Html/images/pexels-ovan-62693.jpg');
+    }
+          </style>
+      </head>
+
+      <div class="x"><div class="a"><p id="pp"></p></div></div><br>
+      <div class="g"><p>Total Male Birth Rate:</p></div>
+      <div class="count1"><p id="b"></p></div><br>
+      <div class="count2"><p id="ba"></p></div><br>
+      <div class="e"><p>Female population:</p></div>
+      <div class="d"><img src="Html/images/man2.jpg"></div>
+      <div class="h"><img src="Html/images/woman.jpg"></div>
+    <div  class="f"><p></p></div>
+  </body>
+ 
+<script>
+    
+
+  let counter = setInterval(updater,400)
+      let real = 7885251250
+      function updater(){
+          real++
+          document.getElementById('pp').innerHTML = real++
+
+      }
+      let op = setInterval(male,1000)
+      let mq = 0
+      function male(){
+          mq++
+          document.getElementById('b').innerHTML = mq++
+      }
+          
+          
+          let po = setInterval(female,2000)
+      let mc = 0
+      function female(){
+          mc++
+          document.getElementById('ba').innerHTML = mc++      
+      }
+
+  </script>
+</html>
